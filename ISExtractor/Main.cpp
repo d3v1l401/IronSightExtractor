@@ -1,7 +1,11 @@
 #include <iostream>
 #include <conio.h>
-#include "Crypto\Crypto.h"
-#include "WPG\WPG.h"
+#include <WPG\WPG.h>
+#include "Common\Colors\Colors.h"
+#pragma comment(lib, "wpgLib.lib")
+
+using namespace std;
+using namespace AdvancedConsole;
 
 void main(int argc, char* argv[]) {
 	cout << Color(AC_WHITE, AC_BACKGROUND) << Color(AC_BLACK) << "[ IronSight Extractor ]" << Color(AC_WHITE) << Color(AC_BLACK, AC_BACKGROUND) << "\n\n";
@@ -13,7 +17,7 @@ void main(int argc, char* argv[]) {
 	if (argc == 2) {
 		std::string fileName(argv[1]);
 		if (fileName.length() > 0) {
-			WPG* _wpgFile = new WPG(fileName);
+			wpgLib::WPG* _wpgFile = new wpgLib::WPG(fileName);
 			if (_wpgFile->IsOpen()) {
 				cout << "[+] File: " << Color(AC_CYAN) << fileName << Color(AC_WHITE) << "\n";
 				cout << " |-[ Magic: " << Color(AC_GREEN) << _wpgFile->GetHeader()->Magic << Color(AC_WHITE) << " ]\n";

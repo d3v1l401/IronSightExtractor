@@ -37,7 +37,7 @@
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
-    <CLRSupport>true</CLRSupport>
+    <CLRSupport>false</CLRSupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -71,11 +71,11 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Libraries\Crypto++;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Libraries\Crypto++\Win32\Output\Release;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\wpgLib;C:\Libraries\Crypto++;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Libraries\Crypto++\Win32\Output\Release;..\wpgLib\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Libraries\Crypto++;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>..\wpgLib;C:\Libraries\Crypto++;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
     <LibraryPath>C:\Libraries\Crypto++\Win32\Output\Debug;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -100,6 +100,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -122,14 +123,15 @@
   <ItemGroup>
     <ClCompile Include="Common\Colors\Colors.cpp" />
     <ClCompile Include="Common\Colors\ColorsEx.cpp" />
-    <ClCompile Include="Crypto\Crypto.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="WPG\WPG.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Colors\Colors.h" />
-    <ClInclude Include="Crypto\Crypto.h" />
-    <ClInclude Include="WPG\WPG.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\wpgLib\wpgLib.vcxproj">
+      <Project>{6f4a99b3-0212-438f-93f4-169d84e3078d}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

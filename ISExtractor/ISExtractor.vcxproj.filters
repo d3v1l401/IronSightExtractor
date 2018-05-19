@@ -13,12 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\Crypto">
-      <UniqueIdentifier>{94b7e055-ce4b-4761-a0f4-e43ca22ccd38}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\WPG">
-      <UniqueIdentifier>{69386f43-8d39-4f27-b873-affcb3308f42}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Common">
       <UniqueIdentifier>{c0412210-314d-41ce-bbe0-0c505e88aeb0}</UniqueIdentifier>
     </Filter>
@@ -30,12 +24,6 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Crypto\Crypto.cpp">
-      <Filter>Header Files\Crypto</Filter>
-    </ClCompile>
-    <ClCompile Include="WPG\WPG.cpp">
-      <Filter>Header Files\WPG</Filter>
-    </ClCompile>
     <ClCompile Include="Common\Colors\Colors.cpp">
       <Filter>Header Files\Common\Colors</Filter>
     </ClCompile>
@@ -44,12 +32,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Crypto\Crypto.h">
-      <Filter>Header Files\Crypto</Filter>
-    </ClInclude>
-    <ClInclude Include="WPG\WPG.h">
-      <Filter>Header Files\WPG</Filter>
-    </ClInclude>
     <ClInclude Include="Common\Colors\Colors.h">
       <Filter>Header Files\Common\Colors</Filter>
     </ClInclude>

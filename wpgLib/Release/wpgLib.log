@@ -1,0 +1,12 @@
+﻿  NFolder.cpp
+  Crypto.cpp
+  WPG.cpp
+c:\users\d3vil401\documents\visual studio 2017\projects\isextractor\wpglib\wpg\..\ZLib\ZLib.h(28): warning C4244: '=': conversion from 'CryptoPP::lword' to 'int', possible loss of data
+c:\users\d3vil401\documents\visual studio 2017\projects\isextractor\wpglib\wpg\..\ZLib\ZLib.h(36): warning C4244: '=': conversion from 'CryptoPP::lword' to 'int', possible loss of data
+c:\users\d3vil401\documents\visual studio 2017\projects\isextractor\wpglib\wpg\WPG.h(44): warning C4091: 'typedef ': ignored on left of 'wpgLib::WPG::FileEntry' when no variable is declared
+c:\users\d3vil401\documents\visual studio 2017\projects\isextractor\wpglib\wpg\WPG.h(52): warning C4091: 'typedef ': ignored on left of 'wpgLib::WPG::Header' when no variable is declared
+c:\users\d3vil401\documents\visual studio 2017\projects\isextractor\wpglib\wpg\WPG.h(182): warning C4018: '<': signed/unsigned mismatch
+  ZLib.cpp
+c:\users\d3vil401\documents\visual studio 2017\projects\isextractor\wpglib\zlib\ZLib.h(28): warning C4244: '=': conversion from 'CryptoPP::lword' to 'int', possible loss of data
+c:\users\d3vil401\documents\visual studio 2017\projects\isextractor\wpglib\zlib\ZLib.h(36): warning C4244: '=': conversion from 'CryptoPP::lword' to 'int', possible loss of data
+  wpgLib.vcxproj -> C:\Users\d3vil401\documents\visual studio 2017\Projects\ISExtractor\Release\wpgLib.lib

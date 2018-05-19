@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Crypto">
+      <UniqueIdentifier>{ae2c7ba0-ca89-4aaf-9d55-e14e996e1173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WPG">
+      <UniqueIdentifier>{2f3d62d3-5955-410d-9a25-1a0c5c9ce38d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ZLib">
+      <UniqueIdentifier>{a98e72ba-641b-4500-a371-3fe1e9313604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{5ee49564-26d9-4944-8a9a-bb6f3791236c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common\NFolder">
+      <UniqueIdentifier>{b168676e-829b-4651-8bb2-c0cface1941c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WPG\WPG.cpp">
+      <Filter>Header Files\WPG</Filter>
+    </ClCompile>
+    <ClCompile Include="Crypto\Crypto.cpp">
+      <Filter>Header Files\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="ZLib\ZLib.cpp">
+      <Filter>Header Files\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\NFolder\NFolder.cpp">
+      <Filter>Header Files\Common\NFolder</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WPG\WPG.h">
+      <Filter>Header Files\WPG</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypto\Crypto.h">
+      <Filter>Header Files\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="ZLib\ZLib.h">
+      <Filter>Header Files\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\NFolder\NFolder.h">
+      <Filter>Header Files\Common\NFolder</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
