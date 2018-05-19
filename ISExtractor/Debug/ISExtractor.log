@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppClean.targets(76,5): warning : Access to the path 'c:\users\d3vil401\documents\visual studio 2017\projects\isextractor\debug\isextractor.exe' is denied.
+  WPG.cpp
+  Main.cpp
+  Crypto.cpp
+  ColorsEx.cpp
+  Colors.cpp
+  Generating Code...
+  ISExtractor.vcxproj -> C:\Users\d3vil401\documents\visual studio 2017\Projects\ISExtractor\Debug\ISExtractor.exe
+  ISExtractor.vcxproj -> C:\Users\d3vil401\documents\visual studio 2017\Projects\ISExtractor\Debug\ISExtractor.pdb (Partial PDB)
