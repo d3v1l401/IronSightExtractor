@@ -1,4 +1,12 @@
-﻿  Generating code
-  All 1013 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+﻿  Main.cpp
+c:\users\d3vil401\documents\visual studio 2017\projects\isextractor\wpglib\wpg\..\ZLib\ZLib.h(28): warning C4244: '=': conversion from 'CryptoPP::lword' to 'int', possible loss of data
+c:\users\d3vil401\documents\visual studio 2017\projects\isextractor\wpglib\wpg\..\ZLib\ZLib.h(36): warning C4244: '=': conversion from 'CryptoPP::lword' to 'int', possible loss of data
+C:\Users\d3vil401\documents\visual studio 2017\Projects\ISExtractor\wpgLib\WPG\WPG.h(44): warning C4091: 'typedef ': ignored on left of 'wpgLib::WPG::FileEntry' when no variable is declared
+C:\Users\d3vil401\documents\visual studio 2017\Projects\ISExtractor\wpgLib\WPG\WPG.h(52): warning C4091: 'typedef ': ignored on left of 'wpgLib::WPG::Header' when no variable is declared
+C:\Users\d3vil401\documents\visual studio 2017\Projects\ISExtractor\wpgLib\WPG\WPG.h(183): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  1 of 1015 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   ISExtractor.vcxproj -> C:\Users\d3vil401\documents\visual studio 2017\Projects\ISExtractor\Release\ISExtractor.exe

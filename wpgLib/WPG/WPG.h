@@ -124,7 +124,6 @@ namespace wpgLib {
 				return;
 			if (!this->readFiles())
 				return;
-			this->_handler.close();
 		}
 
 		bool SaveFile(std::string _name) {
@@ -151,9 +150,11 @@ namespace wpgLib {
 			CreateDirectoryA(_header->Path.c_str(), NULL);
 			for (auto i = _header->Files.begin(); i != _header->Files.end(); i++) {
 
+
 				auto path = (*i).Name.substr(0, (*i).Name.find_last_of("\\/"));
 				Common::createFolder(path);
 				auto name = (*i).Name.substr((*i).Name.find_last_of("\\/") + 1);
+				printf("    |- Writing %s...\n", name.c_str());
 
 				std::fstream out(name, std::ios::out | std::ios::binary);
 				out.write((*i)._buffer, (*i).Size);
@@ -240,12 +241,10 @@ namespace wpgLib {
 									memcpy(dataOutSize, nData, 4);
 
 									if (_entry.Size > 0x6400000) {
-										break;
 									}
 
 									this->_zlib->Decompress(nData + 4, _entry.Size - 4, &_entry._buffer, (int&)_entry.Size);
 									if (_entry.Size != *dataOutSize) {
-										break;
 									}
 
 									free(dataOutSize);
